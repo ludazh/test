@@ -150,7 +150,7 @@ plt.tight_layout()
 plt.grid(True)
 plt.show()
 
-**Alternative - Simple plot_importance**
+#Alternative - Simple plot_importance
 
 colors = [plt.cm.cool(i/float(len(x.columns)-1)) for i in range(len(x.columns))]
 ax = lgb.plot_importance(lgb_clss, max_num_features=16,figsize=(16,12),height=0.5,color=colors)
